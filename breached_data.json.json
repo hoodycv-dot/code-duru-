@@ -1,0 +1,20 @@
+{
+  "breached_emails": [
+    {
+      "email": "judiesami@yahoo.com",
+      "status": "breached",
+      "breach_source": "تسريب بيانات عام 2023 - منصة تسوق إلكترونية إقليمية",
+      "breach_date": "2023-04-11",
+      "risk_level": "high",
+      "message_ar_iq": "عيني انتبهي! هذا الإيميل طلعت بيه تسريب بيانات سابق، لازم نحط تجميد وقائي مؤقت على حسابچ لحد ما نتأكد من هويتچ."
+    },
+    {
+      "email": "dfghjhd.cv234@gmail.com",
+      "status": "safe",
+      "breach_source": null,
+      "breach_date": null,
+      "risk_level": "none",
+      "message_ar_iq": "إيميلچ آمن 100%! ماكو أي تسريب مسجل عليه، نكمل نربط حسابچ المصرفي هسة."
+    }
+  ]
+}

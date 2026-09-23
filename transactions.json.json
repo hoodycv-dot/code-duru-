@@ -1,0 +1,41 @@
+{
+  "customer": {
+    "name_ar": "ست تهجد",
+    "national_id": "199283746512",
+    "phone": "07709044763",
+    "bank_linked": "Zain Cash",
+    "account_balance_iqd": 1850000
+  },
+  "subscriptions": [
+    { "id": "sub_netflix", "name": "Netflix", "category": "Streaming", "amount_iqd": 15000, "cycle": "monthly", "next_renewal": "2026-09-26", "logo": "🎬" },
+    { "id": "sub_spotify", "name": "Spotify", "category": "Music", "amount_iqd": 8000, "cycle": "monthly", "next_renewal": "2026-09-25", "logo": "🎧" },
+    { "id": "sub_chatgpt", "name": "ChatGPT Plus", "category": "AI Tools", "amount_iqd": 27000, "cycle": "monthly", "next_renewal": "2026-10-02", "logo": "🤖" },
+    { "id": "sub_shahid", "name": "Shahid VIP", "category": "Streaming", "amount_iqd": 12000, "cycle": "monthly", "next_renewal": "2026-10-05", "logo": "📺" },
+    { "id": "sub_gym", "name": "Gold's Gym App", "category": "Fitness", "amount_iqd": 20000, "cycle": "monthly", "next_renewal": "2026-09-30", "logo": "💪" }
+  ],
+  "normal_transactions": [
+    { "id": "txn_001", "merchant": "سوبرماركت الكرادة", "amount_iqd": 45000, "date": "2026-09-20", "status": "completed", "type": "purchase" },
+    { "id": "txn_002", "merchant": "مطعم بغداد نايت", "amount_iqd": 32000, "date": "2026-09-19", "status": "completed", "type": "purchase" },
+    { "id": "txn_003", "merchant": "محطة وقود", "amount_iqd": 25000, "date": "2026-09-18", "status": "completed", "type": "purchase" }
+  ],
+  "fraud_scenario": {
+    "id": "txn_fraud_250k",
+    "merchant": "صراف خارجي غير معتاد - Unusual External Exchange Point",
+    "amount_iqd": 250000,
+    "date": "2026-09-23",
+    "type": "external_withdrawal",
+    "risk_flags": [
+      "destination_not_in_usual_pattern",
+      "amount_significantly_above_average",
+      "external_exchange_point",
+      "rapid_succession_flag"
+    ],
+    "status": "pending_review",
+    "customer_phone": "07709044763",
+    "customer_name_ar": "ست تهجد",
+    "buzzer_alert": true,
+    "call_script_ar_iq": "مرحبا عيني، انتي ست تهجد؟ وياج وكيل الأمان المالي من منصة كودورو (Code-Duru). عيني رصدنا هسّة محاولة سحب خارجي مشبوهة بمبلغ 250 ألف دينار من حسابج بـ زين كاش إلى صراف/منفذ خارجي غير معتاد.. إحنا وقفنا المعاملة فوراً وقبل ما ينخصم أي دينار من رصيدج لأن الحساب مشبوه، تنصحينا نلغي العملية ونحظر الحساب الخارجي؟",
+    "expected_customer_response_ar_iq": "إي الغيها واحظر الحساب",
+    "resolution_status": "cancelled_and_blocked"
+  }
+}
